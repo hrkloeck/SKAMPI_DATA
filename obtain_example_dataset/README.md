@@ -47,7 +47,7 @@ EDD_2022-10-18T11:07:55_350_dynamic-spectrum.pdf
   
   [EDD_2022-10-18T11:07:55_120_scan_local.pdf](https://github.com/hrkloeck/SKAMPI_DATA/blob/main/obtain_example_dataset/OBS_18373/EDD_2022-10-18T11%3A07%3A55_120_scan_local.pdf)
 
-  Note SKAMPI is measureinig in 2 polarisation channels or in full Stokes (S0, S1, S2, S3) and noise diode on (ND1) and off (ND0). In this example the spectra do show 2 polraisation n combinatioon with the nose diode.
+  Note SKAMPI is measureinig in 2 polarisation channels or in full Stokes (S0, S1, S2, S3) and noise diode on (ND1) and off (ND0). In this example the spectra do show 2 polraisation n combinatioon with the nose diode. The units are in uncalibrated albertary units.
      
   [EDD_2022-10-18T11:07:55_120_spectrum.pdf](https://github.com/hrkloeck/SKAMPI_DATA/blob/main/obtain_example_dataset/OBS_18373/EDD_2022-10-18T11%3A07%3A55_200_spectrum.pdf)
 
