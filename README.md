@@ -1,0 +1,1 @@
+# SKAMPI_DATA
