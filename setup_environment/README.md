@@ -12,7 +12,7 @@ cd SKAMPI_DATA/setup_environment
 
 conda create --name SKAMPIDATA python=3.9 pip
 
-conda activate PROTOTYP
+conda activate SKAMPIDATA
 
 pip install -r requirements_082022.txt
 ```
