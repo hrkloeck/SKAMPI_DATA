@@ -36,7 +36,7 @@ EDD_2022-10-18T11:07:55_350_dynamic-spectrum.pdf
 ```
 
 - the next step is to merge all the parts (EDD_2022-10-18T11:07:55.459719UTC_jvpgs.hdf5_part000 ... part006)
-  into a single files.
+  into a single file.
   ```
   cat *_part* > EDD_2022-10-18T11:07:55.459719UTC_jvpgs.hdf5
   ```
@@ -47,8 +47,8 @@ EDD_2022-10-18T11:07:55_350_dynamic-spectrum.pdf
   
   [EDD_2022-10-18T11:07:55_120_scan_local.pdf](https://github.com/hrkloeck/SKAMPI_DATA/blob/main/obtain_example_dataset/OBS_18373/EDD_2022-10-18T11%3A07%3A55_120_scan_local.pdf)
 
-[EDD_2022-10-18T11:07:55_120_spectrum.pdf](https://github.com/hrkloeck/SKAMPI_DATA/blob/main/obtain_example_dataset/OBS_18373/EDD_2022-10-18T11%3A07%3A55_120_spectrum.pdf)
+  [EDD_2022-10-18T11:07:55_120_spectrum.pdf](https://github.com/hrkloeck/SKAMPI_DATA/blob/main/obtain_example_dataset/OBS_18373/EDD_2022-10-18T11%3A07%3A55_120_spectrum.pdf)
 
-[EDD_2022-10-18T11:07:55_120_dynamic-spectrum.pdf](https://github.com/hrkloeck/SKAMPI_DATA/blob/main/obtain_example_dataset/OBS_18373/EDD_2022-10-18T11%3A07%3A55_120_dynamic-spectrum.pdf)
+  [EDD_2022-10-18T11:07:55_120_dynamic-spectrum.pdf](https://github.com/hrkloeck/SKAMPI_DATA/blob/main/obtain_example_dataset/OBS_18373/EDD_2022-10-18T11%3A07%3A55_120_dynamic-spectrum.pdf)
 
 
