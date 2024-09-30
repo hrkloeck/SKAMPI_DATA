@@ -44,6 +44,11 @@ EDD_2022-10-18T11:07:55_350_dynamic-spectrum.pdf
 - for completness the pdf files are stored here.
 
   [EDD_2022-10-18T11:07:55_120_scan-equatorial_000.pdf](https://github.com/hrkloeck/SKAMPI_DATA/blob/main/obtain_example_dataset/OBS_18373/EDD_2022-10-18T11%3A07%3A55_120_scan-equatorial_000.pdf)
-[EDD_2022-10-18T11:07:55_120_scan_local.pdf](https://github.com/hrkloeck/SKAMPI_DATA/blob/main/obtain_example_dataset/OBS_18373/EDD_2022-10-18T11%3A07%3A55_120_scan_local.pdf)
+  
+  [EDD_2022-10-18T11:07:55_120_scan_local.pdf](https://github.com/hrkloeck/SKAMPI_DATA/blob/main/obtain_example_dataset/OBS_18373/EDD_2022-10-18T11%3A07%3A55_120_scan_local.pdf)
+
+[EDD_2022-10-18T11:07:55_120_spectrum.pdf](https://github.com/hrkloeck/SKAMPI_DATA/blob/main/obtain_example_dataset/OBS_18373/EDD_2022-10-18T11%3A07%3A55_120_spectrum.pdf)
+
+[EDD_2022-10-18T11:07:55_120_dynamic-spectrum.pdf](https://github.com/hrkloeck/SKAMPI_DATA/blob/main/obtain_example_dataset/OBS_18373/EDD_2022-10-18T11%3A07%3A55_120_dynamic-spectrum.pdf)
 
 
