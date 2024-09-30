@@ -1,7 +1,6 @@
 # SKAMPI_DATA setting up the environment
 
-The example uses [conda](https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html#) as a work environment and we assue you have
-already installed conda on you machine.
+The example uses [conda](https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html#) as a work environment and we assue that's already installed on your machine.
 
 Please follow the next steps to setup the environment  
 
