@@ -14,7 +14,7 @@ conda create --name SKAMPIDATA python=3.9 pip
 
 conda activate SKAMPIDATA
 
-pip install -r requirements_082022.txt
+pip install -r requirements.txt_082022
 ```
 
 Once that is done you may want to run the first example script.
