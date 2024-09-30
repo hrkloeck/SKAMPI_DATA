@@ -49,6 +49,6 @@ EDD_2022-10-18T11:07:55_350_dynamic-spectrum.pdf
 
   [EDD_2022-10-18T11:07:55_120_spectrum.pdf](https://github.com/hrkloeck/SKAMPI_DATA/blob/main/obtain_example_dataset/OBS_18373/EDD_2022-10-18T11%3A07%3A55_120_spectrum.pdf)
 
-  [EDD_2022-10-18T11:07:55_120_dynamic-spectrum.pdf]([https://github.com/hrkloeck/SKAMPI_DATA/blob/main/obtain_example_dataset/OBS_18373/EDD_2022-10-18T11%3A07%3A55_120_dynamic-spectrum.pdf](https://github.com/hrkloeck/SKAMPI_DATA/blob/main/obtain_example_dataset/OBS_18373/EDD_2022-10-18T11%3A07%3A55_350_dynamic-spectrum.pdf))
+  [EDD_2022-10-18T11:07:55_120_dynamic-spectrum.pdf(https://github.com/hrkloeck/SKAMPI_DATA/blob/main/obtain_example_dataset/OBS_18373/EDD_2022-10-18T11%3A07%3A55_120_dynamic-spectrum.pdf](https://github.com/hrkloeck/SKAMPI_DATA/blob/main/obtain_example_dataset/OBS_18373/EDD_2022-10-18T11%3A07%3A55_350_dynamic-spectrum.pdf)
 
 
