@@ -16,7 +16,7 @@ foo.hdf5_part002
 
 these can be joined on the commandline via $cat *_part* > foo.hdf5. Note that the single parts can not be read individually and have to be merged into a single file after download. They can be deleted after merging.
 
-We dowlnloaded the
+We downloaded the
 [OBS_18373](https://keeper.mpdl.mpg.de/d/26112717a86f48b8a30d/?p=%2FOBS_18373&mode=list)
 
 and the directory contains the following files:
