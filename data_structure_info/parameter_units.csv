@@ -1,0 +1,752 @@
+parameter,unit,description
+/history,text,"Modification history (date, software, version) of the file"
+monitor/acu/actual_timestamp,MJD,
+monitor/acu/ambient_temp_correction_config/ambient_factor_az_band_1,,
+monitor/acu/ambient_temp_correction_config/ambient_factor_az_band_10,,
+monitor/acu/ambient_temp_correction_config/ambient_factor_az_band_2,,
+monitor/acu/ambient_temp_correction_config/ambient_factor_az_band_3,,
+monitor/acu/ambient_temp_correction_config/ambient_factor_az_band_4,,
+monitor/acu/ambient_temp_correction_config/ambient_factor_az_band_5a,,
+monitor/acu/ambient_temp_correction_config/ambient_factor_az_band_5b,,
+monitor/acu/ambient_temp_correction_config/ambient_factor_az_band_5c,,
+monitor/acu/ambient_temp_correction_config/ambient_factor_az_band_8,,
+monitor/acu/ambient_temp_correction_config/ambient_factor_az_band_9,,
+monitor/acu/ambient_temp_correction_config/ambient_factor_el_band_1,,
+monitor/acu/ambient_temp_correction_config/ambient_factor_el_band_10,,
+monitor/acu/ambient_temp_correction_config/ambient_factor_el_band_2,,
+monitor/acu/ambient_temp_correction_config/ambient_factor_el_band_3,,
+monitor/acu/ambient_temp_correction_config/ambient_factor_el_band_4,,
+monitor/acu/ambient_temp_correction_config/ambient_factor_el_band_5a,,
+monitor/acu/ambient_temp_correction_config/ambient_factor_el_band_5b,,
+monitor/acu/ambient_temp_correction_config/ambient_factor_el_band_5c,,
+monitor/acu/ambient_temp_correction_config/ambient_factor_el_band_8,,
+monitor/acu/ambient_temp_correction_config/ambient_factor_el_band_9,,
+monitor/acu/azimuth/a_shape,deg/s^2,acceleration output of the shaper
+monitor/acu/azimuth/axis_bit_status/abs_active,boolean,
+monitor/acu/azimuth/axis_bit_status/abs_emergency_stop,boolean,the axis is in e-stop condition
+monitor/acu/azimuth/axis_bit_status/abs_enc_op,boolean,encoder system is operational
+monitor/acu/azimuth/axis_bit_status/abs_init_ok,boolean,the initialization of the axis is done. If the bit is not set the configuration file has to be checked
+monitor/acu/azimuth/axis_bit_status/abs_mot_active,boolean,all selected motors of the axis are activated
+monitor/acu/azimuth/axis_bit_status/abs_override,boolean,The override functionality for the limit switches the stow pin and the hand crank is activated. To use the override functionality the axis has to be in service mode the hand held panel has to be active and the releasing key must be activated
+monitor/acu/azimuth/axis_bit_status/abs_park_pos_reached,boolean,Park position is reached
+monitor/acu/azimuth/axis_bit_status/abs_point_corr_enabled,boolean,Pointing correction is enabled
+monitor/acu/azimuth/axis_bit_status/abs_pos_offset,boolean,A position offset value will be added to the commanded position
+monitor/acu/azimuth/axis_bit_status/abs_praez_ok,boolean,The position deviation is below the configured value
+monitor/acu/azimuth/axis_bit_status/abs_precision,boolean,The velocity of the axis is below the configured precision on value and the position deviation is below the configured value. Dependent on the configuration parameters the control parameters will be adjusted
+monitor/acu/azimuth/axis_bit_status/abs_ready,boolean,All selected motors of the axis are faultless and ready for activating
+monitor/acu/azimuth/axis_bit_status/abs_reset,boolean,A reset of all errors regarding the axis is made
+monitor/acu/azimuth/axis_bit_status/abs_sim,boolean,The axis is in simulation mode
+monitor/acu/azimuth/axis_bit_status/abs_stow_pos_reached,boolean,Stow position is reached
+monitor/acu/azimuth/axis_bit_status/not_used,not used,not used
+monitor/acu/azimuth/axis_bit_status/not_used_1,not used,not used
+monitor/acu/azimuth/axis_bit_status/not_used_17,not used,not used
+monitor/acu/azimuth/axis_bit_status/not_used_18,not used,not used
+monitor/acu/azimuth/axis_bit_status/not_used_19,not used,not used
+monitor/acu/azimuth/axis_bit_status/not_used_2,not used,not used
+monitor/acu/azimuth/axis_bit_status/not_used_20,not used,not used
+monitor/acu/azimuth/axis_bit_status/park_01,boolean,Axis is parked at park position 01: stow position N
+monitor/acu/azimuth/axis_bit_status/park_02,boolean,Axis is parked at park position 02: stow position E
+monitor/acu/azimuth/axis_bit_status/park_03,boolean,Axis is parked at park position 03: stow position S
+monitor/acu/azimuth/axis_bit_status/park_04,boolean,Axis is parked at park position 04: stow position W
+monitor/acu/azimuth/axis_bit_status/park_05,boolean,Axis is parked at park position 05
+monitor/acu/azimuth/axis_bit_status/park_06,boolean,Axis is parked at park position 06
+monitor/acu/azimuth/axis_bit_status/park_07,boolean,Axis is parked at park position 07
+monitor/acu/azimuth/axis_bit_status/park_08,boolean,Axis is parked at park position 08: maintenance position 01
+monitor/acu/azimuth/axis_bit_status/park_09,boolean,Axis is parked at park position 09: maintenance position 02
+monitor/acu/azimuth/error_status/err_brake,boolean,Brake error active brake status not equal brake command
+monitor/acu/azimuth/error_status/err_em_limit_dn,boolean,The emergency limit down hardware limit switch is reached to get out of this position the override mode is needed
+monitor/acu/azimuth/error_status/err_em_limit_up,boolean,The emergency limit up hardware limit switch is reached to get out of this position the override mode is needed
+monitor/acu/azimuth/error_status/err_em_stop,boolean,At least one emergency stop button is activated
+monitor/acu/azimuth/error_status/err_error_active,boolean,At least one error is set
+monitor/acu/azimuth/error_status/err_field_bus,boolean,Field bus error
+monitor/acu/azimuth/error_status/err_lim_err,boolean,The maximum specified velocity during movement in the limit switch range of the axis is exceeded
+monitor/acu/azimuth/error_status/err_mot_comm,boolean,The communication ACU Amplifier is faulty. Possible errors ate EtherCAT communication error Service channel communication error
+monitor/acu/azimuth/error_status/err_mot_overload,boolean,At least one of the servo power supply module reports a power limit fault that is preset for a defined time
+monitor/acu/azimuth/error_status/err_mot_ready,boolean,Amplifier system of at least one motor is not ready for operation
+monitor/acu/azimuth/error_status/err_mot_tacho,boolean,The motor tacho of at least one motor is faulty
+monitor/acu/azimuth/error_status/err_mot_timeout,boolean,Activation timeout of at least one motor. Not all motors are activated during the configured timeout time
+monitor/acu/azimuth/error_status/err_motor,boolean,Motor failure
+monitor/acu/azimuth/error_status/err_override,boolean,The override mode is activated while the handheld panel is not activated or in override mode or the service mode is not active
+monitor/acu/azimuth/error_status/err_p_dev_exceed,boolean,The maximum tolerable position deviation is exceeded
+monitor/acu/azimuth/error_status/err_p_range_exceed,boolean,The actual position of the encoder is outside the maximum range of the axis
+monitor/acu/azimuth/error_status/err_pos_enc,boolean,Axis encoders are in error condition
+monitor/acu/azimuth/error_status/err_pos_enc_step,boolean,The difference between the read out of the encoder and its value one task cycle before is too high
+monitor/acu/azimuth/error_status/err_power,boolean,Power errror at least one power source is missing 400VAC 600VDC or 24VDC
+monitor/acu/azimuth/error_status/err_v_dev_exceed,boolean,The maximum tolerable velocity deviation is exceeded
+monitor/acu/azimuth/error_status/err_v_mot_exceed,boolean,The maximum tolerable velocity deviation of at least one motor is exceeded
+monitor/acu/azimuth/error_status/not_used_1,not used,not used
+monitor/acu/azimuth/error_status/not_used_2,not used,not used
+monitor/acu/azimuth/error_status/not_used_26,not used,not used
+monitor/acu/azimuth/error_status/not_used_27,not used,not used
+monitor/acu/azimuth/error_status/not_used_28,not used,not used
+monitor/acu/azimuth/error_status/not_used_29,not used,not used
+monitor/acu/azimuth/error_status/not_used_3,not used,not used
+monitor/acu/azimuth/error_status/not_used_4,not used,not used
+monitor/acu/azimuth/error_status/not_used_5,not used,not used
+monitor/acu/azimuth/error_status/not_used_6,not used,not used
+monitor/acu/azimuth/error_status/not_used_7,not used,not used
+monitor/acu/azimuth/motor_1/actual_torque,Nm,The actual torque of the motor
+monitor/acu/azimuth/motor_1/actual_velocity,rpm,The actual velocity of the motor
+monitor/acu/azimuth/motor_1/inverter_utilization,,
+monitor/acu/azimuth/motor_1/motor_overload,%,Motor overload
+monitor/acu/azimuth/motor_1/motor_temperature,C,Motor temperature
+monitor/acu/azimuth/motor_1/not_used_1,not used,not used
+monitor/acu/azimuth/motor_1/not_used_2,not used,not used
+monitor/acu/azimuth/motor_1/rate_of_utilization,%,The actual utilization of the motor pm 200% 100% means rated torque
+monitor/acu/azimuth/motor_2/actual_torque,Nm,The actual torque of the motor
+monitor/acu/azimuth/motor_2/actual_velocity,rpm,The actual velocity of the motor
+monitor/acu/azimuth/motor_2/inverter_utilization,,
+monitor/acu/azimuth/motor_2/motor_overload,%,Motor overload
+monitor/acu/azimuth/motor_2/motor_temperature,C,Motor temperature
+monitor/acu/azimuth/motor_2/not_used_1,not used,not used
+monitor/acu/azimuth/motor_2/not_used_2,not used,not used
+monitor/acu/azimuth/motor_2/rate_of_utilization,%,The actual utilization of the motor pm 200% 100% means rated torque
+monitor/acu/azimuth/p_act,deg,Actual position with pointing corrections included
+monitor/acu/azimuth/p_dev,deg,Position deviation p_shape – p_enc
+monitor/acu/azimuth/p_dev_fil,deg,Filtered position deviation filtered by PT1
+monitor/acu/azimuth/p_enc,deg,Actual position received from the encoder
+monitor/acu/azimuth/p_point_corr,deg,Current pointing correction value applied p_act – p_enc
+monitor/acu/azimuth/p_set,deg,Set point position
+monitor/acu/azimuth/p_shape,deg,Set point position output from the shaper
+monitor/acu/azimuth/state,int,status see SKA dish structure controller
+monitor/acu/azimuth/v_act,deg/s,Actual velocity
+monitor/acu/azimuth/v_set_max,deg/s,Maximum velocity during motion
+monitor/acu/azimuth/v_shape,deg/s,Velocity output of the shaper
+monitor/acu/azimuth/warning_status/not_used_1,not used,not used
+monitor/acu/azimuth/warning_status/not_used_10,not used,not used
+monitor/acu/azimuth/warning_status/not_used_11,not used,not used
+monitor/acu/azimuth/warning_status/not_used_12,not used,not used
+monitor/acu/azimuth/warning_status/not_used_13,not used,not used
+monitor/acu/azimuth/warning_status/not_used_14,not used,not used
+monitor/acu/azimuth/warning_status/not_used_15,not used,not used
+monitor/acu/azimuth/warning_status/not_used_2,not used,not used
+monitor/acu/azimuth/warning_status/not_used_3,not used,not used
+monitor/acu/azimuth/warning_status/not_used_4,not used,not used
+monitor/acu/azimuth/warning_status/not_used_5,not used,not used
+monitor/acu/azimuth/warning_status/not_used_6,not used,not used
+monitor/acu/azimuth/warning_status/not_used_7,not used,not used
+monitor/acu/azimuth/warning_status/not_used_8,not used,not used
+monitor/acu/azimuth/warning_status/not_used_9,not used,not used
+monitor/acu/azimuth/warning_status/wa_brake_open_inaktiv,boolean,At least one brake reports the status open while the axis is not in state Active
+monitor/acu/azimuth/warning_status/wa_degraded_mode,boolean,Not all motors of the axis are selected. The motors that are not selected will not be activated. The maximum velocity and acceleration of the axis will be reduced
+monitor/acu/azimuth/warning_status/wa_fin_lim_dn_inconsist,boolean,Software and hardware switch distance does not fit
+monitor/acu/azimuth/warning_status/wa_fin_lim_up_inconsist,boolean,Software and hardware switch distance does not fit
+monitor/acu/azimuth/warning_status/wa_fin_limit_dn,boolean,The final upper position of the axis is reached
+monitor/acu/azimuth/warning_status/wa_fin_limit_up,boolean,The final lower position of the axis is reached
+monitor/acu/azimuth/warning_status/wa_m_max_exceeded,boolean,Maximum allowed torque of one axis is reached
+monitor/acu/azimuth/warning_status/wa_mot_ready,boolean,Amplifier system of at least one motor is not ready for operation
+monitor/acu/azimuth/warning_status/wa_mot_warn,boolean,Motor warning
+monitor/acu/azimuth/warning_status/wa_override,boolean,The override mode is activated . The maximum velocity of the axis will be reduced to a predefined value
+monitor/acu/azimuth/warning_status/wa_param_fault,boolean,The axis is not initialized and can not be used
+monitor/acu/azimuth/warning_status/wa_pos_enc_warn,boolean,Position encoder is in warning state
+monitor/acu/azimuth/warning_status/wa_pre_limit_dn,boolean,The pre-limit up position is reached. The maximum velocity will be reduced to a predefined value
+monitor/acu/azimuth/warning_status/wa_pre_limit_up,boolean,The pre-limit down position is reached. The maximum velocity will be reduced to a predefined value
+monitor/acu/azimuth/warning_status/wa_rate_mode,boolean,The axis is set to rate mode
+monitor/acu/azimuth/warning_status/wa_stowpins_deployed,boolean,The stow pin is deployed the axis is blocked
+monitor/acu/azimuth/warning_status/wa_vel_limit,boolean,The velocity rate limitation is active. One of the pre limit switches is reached
+monitor/acu/command_arbiter/act_authority,string,Actual authority
+monitor/acu/elevation/a_shape,deg/s^2,acceleration output of the shaper
+monitor/acu/elevation/axis_bit_status/abs_active,boolean,
+monitor/acu/elevation/axis_bit_status/abs_emergency_stop,boolean,the axis is in e-stop condition
+monitor/acu/elevation/axis_bit_status/abs_enc_op,boolean,encoder system is operational
+monitor/acu/elevation/axis_bit_status/abs_init_ok,boolean,the initialization of the axis is done. If the bit is not set the configuration file has to be checked
+monitor/acu/elevation/axis_bit_status/abs_mot_active,boolean,all selected motors of the axis are activated
+monitor/acu/elevation/axis_bit_status/abs_override,boolean,The override functionality for the limit switches the stow pin and the hand crank is activated. To use the override functionality the axis has to be in service mode the hand held panel has to be active and the releasing key must be activated
+monitor/acu/elevation/axis_bit_status/abs_park_pos_reached,boolean,Park position is reached
+monitor/acu/elevation/axis_bit_status/abs_point_corr_enabled,boolean,Pointing correction is enabled
+monitor/acu/elevation/axis_bit_status/abs_pos_offset,boolean,A position offset value will be added to the commanded position
+monitor/acu/elevation/axis_bit_status/abs_praez_ok,boolean,The position deviation is below the configured value
+monitor/acu/elevation/axis_bit_status/abs_precision,boolean,The velocity of the axis is below the configured precision on value and the position deviation is below the configured value. Dependent on the configuration parameters the control parameters will be adjusted
+monitor/acu/elevation/axis_bit_status/abs_ready,boolean,All selected motors of the axis are faultless and ready for activating
+monitor/acu/elevation/axis_bit_status/abs_reset,boolean,A reset of all errors regarding the axis is made
+monitor/acu/elevation/axis_bit_status/abs_sim,boolean,The axis is in simulation mode
+monitor/acu/elevation/axis_bit_status/abs_stow_pos_reached,boolean,Stow position is reached
+monitor/acu/elevation/axis_bit_status/not_used,boolean,not used
+monitor/acu/elevation/axis_bit_status/not_used_1,boolean,not used
+monitor/acu/elevation/axis_bit_status/not_used_17,boolean,not used
+monitor/acu/elevation/axis_bit_status/not_used_18,boolean,not used
+monitor/acu/elevation/axis_bit_status/not_used_19,boolean,not used
+monitor/acu/elevation/axis_bit_status/not_used_2,boolean,not used
+monitor/acu/elevation/axis_bit_status/not_used_20,boolean,not used
+monitor/acu/elevation/axis_bit_status/park_01,boolean,Axis is parked at park position 01: stow position N
+monitor/acu/elevation/axis_bit_status/park_02,boolean,Axis is parked at park position 02: stow position E
+monitor/acu/elevation/axis_bit_status/park_03,boolean,Axis is parked at park position 03: stow position S
+monitor/acu/elevation/axis_bit_status/park_04,boolean,Axis is parked at park position 04: stow position W
+monitor/acu/elevation/axis_bit_status/park_05,boolean,Axis is parked at park position 05
+monitor/acu/elevation/axis_bit_status/park_06,boolean,Axis is parked at park position 06
+monitor/acu/elevation/axis_bit_status/park_07,boolean,Axis is parked at park position 07
+monitor/acu/elevation/axis_bit_status/park_08,boolean,Axis is parked at park position 08: maintenance position 01
+monitor/acu/elevation/axis_bit_status/park_09,boolean,Axis is parked at park position 09: maintenance position 02
+monitor/acu/elevation/error_status/err_brake,boolean,Brake error active brake status not equal brake command
+monitor/acu/elevation/error_status/err_em_limit_dn,boolean,The emergency limit down hardware limit switch is reached to get out of this position the override mode is needed
+monitor/acu/elevation/error_status/err_em_limit_up,boolean,The emergency limit up hardware limit switch is reached to get out of this position the override mode is needed
+monitor/acu/elevation/error_status/err_em_stop,boolean,At least one emergency stop button is activated
+monitor/acu/elevation/error_status/err_error_active,boolean,At least one error is set
+monitor/acu/elevation/error_status/err_field_bus,boolean,Field bus error
+monitor/acu/elevation/error_status/err_lim_err,boolean,The maximum specified velocity during movement in the limit switch range of the axis is exceeded
+monitor/acu/elevation/error_status/err_mot_comm,boolean,The communication ACU Amplifier is faulty. Possible errors ate EtherCAT communication error Service channel communication error
+monitor/acu/elevation/error_status/err_mot_overload,boolean,At least one of the servo power supply module reports a power limit fault that is preset for a defined time
+monitor/acu/elevation/error_status/err_mot_ready,boolean,Amplifier system of at least one motor is not ready for operation
+monitor/acu/elevation/error_status/err_mot_tacho,boolean,The motor tacho of at least one motor is faulty
+monitor/acu/elevation/error_status/err_mot_timeout,boolean,Activation timeout of at least one motor. Not all motors are activated during the configured timeout time
+monitor/acu/elevation/error_status/err_motor,boolean,Motor failure
+monitor/acu/elevation/error_status/err_override,boolean,The override mode is activated while the handheld panel is not activated or in override mode or the service mode is not active
+monitor/acu/elevation/error_status/err_p_dev_exceed,boolean,The maximum tolerable position deviation is exceeded
+monitor/acu/elevation/error_status/err_p_range_exceed,boolean,The actual position of the encoder is outside the maximum range of the axis
+monitor/acu/elevation/error_status/err_pos_enc,boolean,Axis encoders are in error condition
+monitor/acu/elevation/error_status/err_pos_enc_step,boolean,The difference between the read out of the encoder and its value one task cycle before is too high
+monitor/acu/elevation/error_status/err_power,boolean,Power errror at least one power source is missing 400VAC 600VDC or 24VDC
+monitor/acu/elevation/error_status/err_v_dev_exceed,boolean,The maximum tolerable velocity deviation is exceeded
+monitor/acu/elevation/error_status/err_v_mot_exceed,boolean,The maximum tolerable velocity deviation of at least one motor is exceeded
+monitor/acu/elevation/error_status/not_used_1,boolean,not used
+monitor/acu/elevation/error_status/not_used_2,boolean,not used
+monitor/acu/elevation/error_status/not_used_26,boolean,not used
+monitor/acu/elevation/error_status/not_used_27,boolean,not used
+monitor/acu/elevation/error_status/not_used_28,boolean,not used
+monitor/acu/elevation/error_status/not_used_29,boolean,not used
+monitor/acu/elevation/error_status/not_used_3,boolean,not used
+monitor/acu/elevation/error_status/not_used_4,boolean,not used
+monitor/acu/elevation/error_status/not_used_5,boolean,not used
+monitor/acu/elevation/error_status/not_used_6,boolean,not used
+monitor/acu/elevation/error_status/not_used_7,boolean,not used
+monitor/acu/elevation/motor_1/actual_torque,Nm,The actual torque of the motor
+monitor/acu/elevation/motor_1/actual_velocity,rpm,The actual velocity of the motor
+monitor/acu/elevation/motor_1/inverter_utilization,,
+monitor/acu/elevation/motor_1/motor_overload,%,Motor overload
+monitor/acu/elevation/motor_1/motor_temperature,C,Motor temperature
+monitor/acu/elevation/motor_1/not_used_1,not used,not used
+monitor/acu/elevation/motor_1/not_used_2,not used,not used
+monitor/acu/elevation/motor_1/rate_of_utilization,%,The actual utilization of the motor pm 200% 100% means rated torque
+monitor/acu/elevation/motor_2/actual_torque,Nm,The actual torque of the motor
+monitor/acu/elevation/motor_2/actual_velocity,rpm,The actual velocity of the motor
+monitor/acu/elevation/motor_2/inverter_utilization,,
+monitor/acu/elevation/motor_2/motor_overload,%,Motor overload
+monitor/acu/elevation/motor_2/motor_temperature,C,Motor temperature
+monitor/acu/elevation/motor_2/not_used_1,not used,not used
+monitor/acu/elevation/motor_2/not_used_2,not used,not used
+monitor/acu/elevation/motor_2/rate_of_utilization,%,The actual utilization of the motor pm 200% 100% means rated torque
+monitor/acu/elevation/p_act,deg,Actual position with pointing corrections included
+monitor/acu/elevation/p_dev,deg,Position deviation p_shape – p_enc
+monitor/acu/elevation/p_dev_fil,deg,Filtered position deviation filtered by PT1
+monitor/acu/elevation/p_enc,deg,Actual position received from the encoder
+monitor/acu/elevation/p_point_corr,deg,Current pointing correction value applied p_act – p_enc
+monitor/acu/elevation/p_set,deg,Set point position
+monitor/acu/elevation/p_shape,deg,Set point position output from the shaper
+monitor/acu/elevation/state,int,status see SKA dish structure controller
+monitor/acu/elevation/v_act,deg/s,Actual velocity
+monitor/acu/elevation/v_set_max,deg/s,Maximum velocity during motion
+monitor/acu/elevation/v_shape,deg/s,Velocity output of the shaper
+monitor/acu/elevation/warning_status/not_used_1,not used,not used
+monitor/acu/elevation/warning_status/not_used_10,not used,not used
+monitor/acu/elevation/warning_status/not_used_11,not used,not used
+monitor/acu/elevation/warning_status/not_used_12,not used,not used
+monitor/acu/elevation/warning_status/not_used_13,not used,not used
+monitor/acu/elevation/warning_status/not_used_14,not used,not used
+monitor/acu/elevation/warning_status/not_used_15,not used,not used
+monitor/acu/elevation/warning_status/not_used_2,not used,not used
+monitor/acu/elevation/warning_status/not_used_3,not used,not used
+monitor/acu/elevation/warning_status/not_used_4,not used,not used
+monitor/acu/elevation/warning_status/not_used_5,not used,not used
+monitor/acu/elevation/warning_status/not_used_6,not used,not used
+monitor/acu/elevation/warning_status/not_used_7,not used,not used
+monitor/acu/elevation/warning_status/not_used_8,not used,not used
+monitor/acu/elevation/warning_status/not_used_9,not used,not used
+monitor/acu/elevation/warning_status/wa_brake_open_inaktiv,boolean,At least one brake reports the status open while the axis is not in state Active
+monitor/acu/elevation/warning_status/wa_degraded_mode,boolean,Not all motors of the axis are selected. The motors that are not selected will not be activated. The maximum velocity and acceleration of the axis will be reduced
+monitor/acu/elevation/warning_status/wa_fin_lim_dn_inconsist,boolean,Software and hardware switch distance does not fit
+monitor/acu/elevation/warning_status/wa_fin_lim_up_inconsist,boolean,Software and hardware switch distance does not fit
+monitor/acu/elevation/warning_status/wa_fin_limit_dn,boolean,The final upper position of the axis is reached
+monitor/acu/elevation/warning_status/wa_fin_limit_up,boolean,The final lower position of the axis is reached
+monitor/acu/elevation/warning_status/wa_m_max_exceeded,boolean,Maximum allowed torque of one axis is reached
+monitor/acu/elevation/warning_status/wa_mot_ready,boolean,Amplifier system of at least one motor is not ready for operation
+monitor/acu/elevation/warning_status/wa_mot_warn,boolean,Motor warning
+monitor/acu/elevation/warning_status/wa_override,boolean,The override mode is activated . The maximum velocity of the axis will be reduced to a predefined value
+monitor/acu/elevation/warning_status/wa_param_fault,boolean,The axis is not initialized and can not be used
+monitor/acu/elevation/warning_status/wa_pos_enc_warn,boolean,Position encoder is in warning state
+monitor/acu/elevation/warning_status/wa_pre_limit_dn,boolean,The pre-limit up position is reached. The maximum velocity will be reduced to a predefined value
+monitor/acu/elevation/warning_status/wa_pre_limit_up,boolean,The pre-limit down position is reached. The maximum velocity will be reduced to a predefined value
+monitor/acu/elevation/warning_status/wa_rate_mode,boolean,The axis is set to rate mode
+monitor/acu/elevation/warning_status/wa_stowpins_deployed,boolean,The stow pin is deployed the axis is blocked
+monitor/acu/elevation/warning_status/wa_vel_limit,boolean,The velocity rate limitation is active. One of the pre limit switches is reached
+monitor/acu/feed_indexer/a_shape,deg/s^2,acceleration output of the shaper
+monitor/acu/feed_indexer/axis_bit_status/abs_active,boolean,
+monitor/acu/feed_indexer/axis_bit_status/abs_emergency_stop,boolean,the axis is in e-stop condition
+monitor/acu/feed_indexer/axis_bit_status/abs_enc_op,boolean,encoder system is operational
+monitor/acu/feed_indexer/axis_bit_status/abs_init_ok,boolean,the initialization of the axis is done. If the bit is not set the configuration file has to be checked
+monitor/acu/feed_indexer/axis_bit_status/abs_mot_active,boolean,all selected motors of the axis are activated
+monitor/acu/feed_indexer/axis_bit_status/abs_override,boolean,The override functionality for the limit switches the stow pin and the hand crank is activated. To use the override functionality the axis has to be in service mode the hand held panel has to be active and the releasing key must be activated
+monitor/acu/feed_indexer/axis_bit_status/abs_park_pos_reached,boolean,Park position is reached
+monitor/acu/feed_indexer/axis_bit_status/abs_point_corr_enabled,boolean,Pointing correction is enabled
+monitor/acu/feed_indexer/axis_bit_status/abs_pos_offset,boolean,A position offset value will be added to the commanded position
+monitor/acu/feed_indexer/axis_bit_status/abs_praez_ok,boolean,The position deviation is below the configured value
+monitor/acu/feed_indexer/axis_bit_status/abs_precision,boolean,The velocity of the axis is below the configured precision on value and the position deviation is below the configured value. Dependent on the configuration parameters the control parameters will be adjusted
+monitor/acu/feed_indexer/axis_bit_status/abs_ready,boolean,All selected motors of the axis are faultless and ready for activating
+monitor/acu/feed_indexer/axis_bit_status/abs_reset,boolean,A reset of all errors regarding the axis is made
+monitor/acu/feed_indexer/axis_bit_status/abs_sim,boolean,The axis is in simulation mode
+monitor/acu/feed_indexer/axis_bit_status/abs_stow_pos_reached,boolean,Stow position is reached
+monitor/acu/feed_indexer/axis_bit_status/not_used,boolean,not used
+monitor/acu/feed_indexer/axis_bit_status/not_used_1,boolean,not used
+monitor/acu/feed_indexer/axis_bit_status/not_used_17,boolean,not used
+monitor/acu/feed_indexer/axis_bit_status/not_used_18,boolean,not used
+monitor/acu/feed_indexer/axis_bit_status/not_used_19,boolean,not used
+monitor/acu/feed_indexer/axis_bit_status/not_used_2,boolean,not used
+monitor/acu/feed_indexer/axis_bit_status/not_used_20,boolean,not used
+monitor/acu/feed_indexer/axis_bit_status/park_01,boolean,Axis is parked at park position 01: Band 1
+monitor/acu/feed_indexer/axis_bit_status/park_02,boolean,Axis is parked at park position 02: Band 2
+monitor/acu/feed_indexer/axis_bit_status/park_03,boolean,Axis is parked at park position 03: Band 3
+monitor/acu/feed_indexer/axis_bit_status/park_04,boolean,Axis is parked at park position 04: Band 4
+monitor/acu/feed_indexer/axis_bit_status/park_05,boolean,Axis is parked at park position 05: Band 5a
+monitor/acu/feed_indexer/axis_bit_status/park_06,boolean,Axis is parked at park position 06: Band 5b
+monitor/acu/feed_indexer/axis_bit_status/park_07,boolean,Axis is parked at park position 07: Band 5c
+monitor/acu/feed_indexer/axis_bit_status/park_08,boolean,Axis is parked at park position 08: maintenance position 01
+monitor/acu/feed_indexer/axis_bit_status/park_09,boolean,Axis is parked at park position 09: maintenance position 02
+monitor/acu/feed_indexer/error_status/err_brake,boolean,Brake error active brake status not equal brake command
+monitor/acu/feed_indexer/error_status/err_em_limit_dn,boolean,The emergency limit down hardware limit switch is reached to get out of this position the override mode is needed
+monitor/acu/feed_indexer/error_status/err_em_limit_up,boolean,The emergency limit up hardware limit switch is reached to get out of this position the override mode is needed
+monitor/acu/feed_indexer/error_status/err_em_stop,boolean,At least one emergency stop button is activated
+monitor/acu/feed_indexer/error_status/err_error_active,boolean,At least one error is set
+monitor/acu/feed_indexer/error_status/err_field_bus,boolean,Field bus error
+monitor/acu/feed_indexer/error_status/err_lim_err,boolean,The maximum specified velocity during movement in the limit switch range of the axis is exceeded
+monitor/acu/feed_indexer/error_status/err_mot_comm,boolean,The communication ACU Amplifier is faulty. Possible errors ate EtherCAT communication error Service channel communication error
+monitor/acu/feed_indexer/error_status/err_mot_overload,boolean,At least one of the servo power supply module reports a power limit fault that is preset for a defined time
+monitor/acu/feed_indexer/error_status/err_mot_ready,boolean,Amplifier system of at least one motor is not ready for operation
+monitor/acu/feed_indexer/error_status/err_mot_tacho,boolean,The motor tacho of at least one motor is faulty
+monitor/acu/feed_indexer/error_status/err_mot_timeout,boolean,Activation timeout of at least one motor. Not all motors are activated during the configured timeout time
+monitor/acu/feed_indexer/error_status/err_motor,boolean,Motor failure
+monitor/acu/feed_indexer/error_status/err_override,boolean,The override mode is activated while the handheld panel is not activated or in override mode or the service mode is not active
+monitor/acu/feed_indexer/error_status/err_p_dev_exceed,boolean,The maximum tolerable position deviation is exceeded
+monitor/acu/feed_indexer/error_status/err_p_range_exceed,boolean,The actual position of the encoder is outside the maximum range of the axis
+monitor/acu/feed_indexer/error_status/err_pos_enc,boolean,Axis encoders are in error condition
+monitor/acu/feed_indexer/error_status/err_pos_enc_step,boolean,The difference between the read out of the encoder and its value one task cycle before is too high
+monitor/acu/feed_indexer/error_status/err_power,boolean,Power errror at least one power source is missing 400VAC 600VDC or 24VDC
+monitor/acu/feed_indexer/error_status/err_v_dev_exceed,boolean,The maximum tolerable velocity deviation is exceeded
+monitor/acu/feed_indexer/error_status/err_v_mot_exceed,boolean,The maximum tolerable velocity deviation of at least one motor is exceeded
+monitor/acu/feed_indexer/error_status/not_used_1,boolean,not used
+monitor/acu/feed_indexer/error_status/not_used_2,boolean,not used
+monitor/acu/feed_indexer/error_status/not_used_26,boolean,not used
+monitor/acu/feed_indexer/error_status/not_used_27,boolean,not used
+monitor/acu/feed_indexer/error_status/not_used_28,boolean,not used
+monitor/acu/feed_indexer/error_status/not_used_29,boolean,not used
+monitor/acu/feed_indexer/error_status/not_used_3,boolean,not used
+monitor/acu/feed_indexer/error_status/not_used_4,boolean,not used
+monitor/acu/feed_indexer/error_status/not_used_5,boolean,not used
+monitor/acu/feed_indexer/error_status/not_used_6,boolean,not used
+monitor/acu/feed_indexer/error_status/not_used_7,boolean,not used
+monitor/acu/feed_indexer/motor_1/actual_torque,Nm,The actual torque of the motor
+monitor/acu/feed_indexer/motor_1/actual_velocity,rpm,The actual velocity of the motor
+monitor/acu/feed_indexer/motor_1/inverter_utilization,,
+monitor/acu/feed_indexer/motor_1/motor_overload,%,Motor overload
+monitor/acu/feed_indexer/motor_1/motor_temperature,C,Motor temperature
+monitor/acu/feed_indexer/motor_1/not_used_1,not used,not used
+monitor/acu/feed_indexer/motor_1/not_used_2,not used,not used
+monitor/acu/feed_indexer/motor_1/rate_of_utilization,%,The actual utilization of the motor pm 200% 100% means rated torque
+monitor/acu/feed_indexer/motor_2/actual_torque,Nm,The actual torque of the motor
+monitor/acu/feed_indexer/motor_2/actual_velocity,rpm,The actual velocity of the motor
+monitor/acu/feed_indexer/motor_2/inverter_utilization,,
+monitor/acu/feed_indexer/motor_2/motor_overload,%,Motor overload
+monitor/acu/feed_indexer/motor_2/motor_temperature,C,Motor temperature
+monitor/acu/feed_indexer/motor_2/not_used_1,not used,not used
+monitor/acu/feed_indexer/motor_2/not_used_2,not used,not used
+monitor/acu/feed_indexer/motor_2/rate_of_utilization,%,The actual utilization of the motor pm 200% 100% means rated torque
+monitor/acu/feed_indexer/p_act,deg,Actual position with pointing corrections included
+monitor/acu/feed_indexer/p_dev,deg,Position deviation p_shape – p_enc
+monitor/acu/feed_indexer/p_dev_fil,deg,Filtered position deviation filtered by PT1
+monitor/acu/feed_indexer/p_enc,deg,Actual position received from the encoder
+monitor/acu/feed_indexer/p_point_corr,deg,Current pointing correction value applied p_act – p_enc
+monitor/acu/feed_indexer/p_set,deg,Set point position
+monitor/acu/feed_indexer/p_shape,deg,Set point position output from the shaper
+monitor/acu/feed_indexer/state,int,status see SKA dish structure controller
+monitor/acu/feed_indexer/v_act,deg/s,Actual velocity
+monitor/acu/feed_indexer/v_set_max,deg/s,Maximum velocity during motion
+monitor/acu/feed_indexer/v_shape,deg/s,Velocity output of the shaper
+monitor/acu/feed_indexer/warning_status/not_used_1,not used,not used
+monitor/acu/feed_indexer/warning_status/not_used_10,not used,not used
+monitor/acu/feed_indexer/warning_status/not_used_11,not used,not used
+monitor/acu/feed_indexer/warning_status/not_used_12,not used,not used
+monitor/acu/feed_indexer/warning_status/not_used_13,not used,not used
+monitor/acu/feed_indexer/warning_status/not_used_14,not used,not used
+monitor/acu/feed_indexer/warning_status/not_used_15,not used,not used
+monitor/acu/feed_indexer/warning_status/not_used_2,not used,not used
+monitor/acu/feed_indexer/warning_status/not_used_3,not used,not used
+monitor/acu/feed_indexer/warning_status/not_used_4,not used,not used
+monitor/acu/feed_indexer/warning_status/not_used_5,not used,not used
+monitor/acu/feed_indexer/warning_status/not_used_6,not used,not used
+monitor/acu/feed_indexer/warning_status/not_used_7,not used,not used
+monitor/acu/feed_indexer/warning_status/not_used_8,not used,not used
+monitor/acu/feed_indexer/warning_status/not_used_9,not used,not used
+monitor/acu/feed_indexer/warning_status/wa_brake_open_inaktiv,boolean,At least one brake reports the status open while the axis is not in state Active
+monitor/acu/feed_indexer/warning_status/wa_degraded_mode,boolean,Not all motors of the axis are selected. The motors that are not selected will not be activated. The maximum velocity and acceleration of the axis will be reduced
+monitor/acu/feed_indexer/warning_status/wa_fin_lim_dn_inconsist,boolean,Software and hardware switch distance does not fit
+monitor/acu/feed_indexer/warning_status/wa_fin_lim_up_inconsist,boolean,Software and hardware switch distance does not fit
+monitor/acu/feed_indexer/warning_status/wa_fin_limit_dn,boolean,The final upper position of the axis is reached
+monitor/acu/feed_indexer/warning_status/wa_fin_limit_up,boolean,The final lower position of the axis is reached
+monitor/acu/feed_indexer/warning_status/wa_m_max_exceeded,boolean,Maximum allowed torque of one axis is reached
+monitor/acu/feed_indexer/warning_status/wa_mot_ready,boolean,Amplifier system of at least one motor is not ready for operation
+monitor/acu/feed_indexer/warning_status/wa_mot_warn,boolean,Motor warning
+monitor/acu/feed_indexer/warning_status/wa_override,boolean,The override mode is activated . The maximum velocity of the axis will be reduced to a predefined value
+monitor/acu/feed_indexer/warning_status/wa_param_fault,boolean,The axis is not initialized and can not be used
+monitor/acu/feed_indexer/warning_status/wa_pos_enc_warn,boolean,Position encoder is in warning state
+monitor/acu/feed_indexer/warning_status/wa_pre_limit_dn,boolean,The pre-limit up position is reached. The maximum velocity will be reduced to a predefined value
+monitor/acu/feed_indexer/warning_status/wa_pre_limit_up,boolean,The pre-limit down position is reached. The maximum velocity will be reduced to a predefined value
+monitor/acu/feed_indexer/warning_status/wa_rate_mode,boolean,The axis is set to rate mode
+monitor/acu/feed_indexer/warning_status/wa_stowpins_deployed,boolean,The stow pin is deployed the axis is blocked
+monitor/acu/feed_indexer/warning_status/wa_vel_limit,boolean,The velocity rate limitation is active. One of the pre limit switches is reached
+monitor/acu/general_management_and_controller/act_power_consum,kW,Actual power consumption of the equipment inside Pedestal Shielded Compartment excluding items powered from pedestal DB
+monitor/acu/general_management_and_controller/bit_status/feed_indexer_park_01,boolean,Axis is parked at park position 01: Band 1
+monitor/acu/general_management_and_controller/bit_status/feed_indexer_park_02,boolean,Axis is parked at park position 02: Band 2
+monitor/acu/general_management_and_controller/bit_status/feed_indexer_park_03,boolean,Axis is parked at park position 03: Band 3
+monitor/acu/general_management_and_controller/bit_status/feed_indexer_park_04,boolean,Axis is parked at park position 04: Band 4
+monitor/acu/general_management_and_controller/bit_status/feed_indexer_park_05,boolean,Axis is parked at park position 05: Band 5a
+monitor/acu/general_management_and_controller/bit_status/feed_indexer_park_06,boolean,Axis is parked at park position 06: Band 5b
+monitor/acu/general_management_and_controller/bit_status/feed_indexer_park_07,boolean,Axis is parked at park position 07: Band 5c
+monitor/acu/general_management_and_controller/bit_status/feed_indexer_park_08,boolean,Axis is parked at park position 08: maintenance position 01
+monitor/acu/general_management_and_controller/bit_status/feed_indexer_park_09,boolean,Axis is parked at park position 09: maintenance position 02
+monitor/acu/general_management_and_controller/bit_status/hhd_connected,boolean,HHD is currently connected to HHD Junction Box
+monitor/acu/general_management_and_controller/bit_status/lmc_cmd_if_connected,boolean,LMC Command Interface connected to DS Tcplp Server
+monitor/acu/general_management_and_controller/bit_status/lmc_sts_if_connected,boolean,LMC Status Interface connected to DS Tcplp Server
+monitor/acu/general_management_and_controller/bit_status/low_power_mode_activ,boolean,The Low Power Mode is currently active
+monitor/acu/general_management_and_controller/bit_status/mtm_gui_cmd_if_connected,boolean,
+monitor/acu/general_management_and_controller/bit_status/mtm_gui_sts_if_connected,boolean,
+monitor/acu/general_management_and_controller/bit_status/not_used_1,not used,not used
+monitor/acu/general_management_and_controller/bit_status/not_used_14,not used,not used
+monitor/acu/general_management_and_controller/bit_status/not_used_15,not used,not used
+monitor/acu/general_management_and_controller/bit_status/not_used_16,not used,not used
+monitor/acu/general_management_and_controller/bit_status/not_used_17,not used,not used
+monitor/acu/general_management_and_controller/bit_status/not_used_18,not used,not used
+monitor/acu/general_management_and_controller/bit_status/not_used_19,not used,not used
+monitor/acu/general_management_and_controller/bit_status/not_used_2,not used,not used
+monitor/acu/general_management_and_controller/bit_status/not_used_20,not used,not used
+monitor/acu/general_management_and_controller/bit_status/not_used_21,not used,not used
+monitor/acu/general_management_and_controller/bit_status/on_source,boolean,The dish is on source acc.
+monitor/acu/general_management_and_controller/bit_status/power_limit_treshold_exceeded,boolean,
+monitor/acu/general_management_and_controller/bit_status/power_limiting_mode_active,boolean,
+monitor/acu/general_management_and_controller/bit_status/scu_cmd_if_connected,boolean,
+monitor/acu/general_management_and_controller/bit_status/scu_sts_if_connected,boolean,
+monitor/acu/general_management_and_controller/bit_status/velocity_limiting_active,boolean,
+monitor/acu/general_management_and_controller/current_phase_1,A,Line Current Phase 1
+monitor/acu/general_management_and_controller/current_phase_2,A,Line Current Phase 2
+monitor/acu/general_management_and_controller/current_phase_3,A,Line Current Phase 3
+monitor/acu/general_management_and_controller/ds_software_version,,DS Software Version
+monitor/acu/general_management_and_controller/error_status/az_error,boolean,Azimuth Controller error
+monitor/acu/general_management_and_controller/error_status/cmd_error,boolean,Command Arbiter Controller error
+monitor/acu/general_management_and_controller/error_status/dmc_error,boolean,Dish Management Controller error
+monitor/acu/general_management_and_controller/error_status/el_error,boolean,Elevation Controller error
+monitor/acu/general_management_and_controller/error_status/fi_error,boolean,FeedIndexer Controller error
+monitor/acu/general_management_and_controller/error_status/not_used_0,not used,not used
+monitor/acu/general_management_and_controller/error_status/not_used_1,not used,not used
+monitor/acu/general_management_and_controller/error_status/not_used_13,not used,not used
+monitor/acu/general_management_and_controller/error_status/poi_error,boolean,Pointing Controller error
+monitor/acu/general_management_and_controller/error_status/pwr_error,boolean,Power Distribution Controller error
+monitor/acu/general_management_and_controller/error_status/saf_error,boolean,Safety System Controller error
+monitor/acu/general_management_and_controller/error_status/stp_error,boolean,Az StowPin Controller error
+monitor/acu/general_management_and_controller/error_status/swi_act_authority_lost,boolean,The actual control authority is not communicating due to a tcp/ip connection break. The dish will go to STOP all motion and deactivate all axes
+monitor/acu/general_management_and_controller/error_status/tim_error,boolean,Time Controller error
+monitor/acu/general_management_and_controller/error_status/trx_error,boolean,Tracking Controller error
+monitor/acu/general_management_and_controller/feed_indexer_pos,,Feed Indexer status
+monitor/acu/general_management_and_controller/frequency_phase_1,Hz,Line Frequency Phase 1
+monitor/acu/general_management_and_controller/frequency_phase_2,Hz,Line Frequency Phase 2
+monitor/acu/general_management_and_controller/frequency_phase_3,Hz,Line Frequency Phase 3
+monitor/acu/general_management_and_controller/hum_azimuth_i_o_unit,%rel,Humidity sensor value of Azimuth I/O Unit
+monitor/acu/general_management_and_controller/hum_elevation_i_o_unit,%rel,Humidity sensor value of Elevation I/O Unit
+monitor/acu/general_management_and_controller/hum_feedindexer_i_o_unit,%rel,Humidity sensor value of FeedIndexer I/O Unit
+monitor/acu/general_management_and_controller/humid_air_inlet_psc,%rel,Humidity sensor value of air inlet of the Pedestal Shielded Compartment
+monitor/acu/general_management_and_controller/humid_air_outlet_psc,%rel,Humidity sensor value of air outlet of the Pedestal Shielded Compartment
+monitor/acu/general_management_and_controller/humid_drive_cab,%rel,Humidity sensor value of drive cabinet
+monitor/acu/general_management_and_controller/on_source_deviation_rms,,Actual deviation used to generate the Management Controller state transition from Slew to Track/SIP and back
+monitor/acu/general_management_and_controller/p_act_az,deg,Actual Azimuth Position
+monitor/acu/general_management_and_controller/p_act_el,deg,Actual Elevation Position
+monitor/acu/general_management_and_controller/p_point_corr_az,deg,Current Azimuth pointing correction value applied p_act-p_enc
+monitor/acu/general_management_and_controller/p_point_corr_el,deg,Current Elevation pointing correction value applied p_act-p_enc
+monitor/acu/general_management_and_controller/p_set_az,deg,Azimuth set point
+monitor/acu/general_management_and_controller/p_set_el,deg,Elevation set point
+monitor/acu/general_management_and_controller/power_factor,°,Power Factor
+monitor/acu/general_management_and_controller/power_status_bs/cb_chain_pdu_fi,boolean,Circuit breakers daisy chain in PDU of Feed Indexer is open
+monitor/acu/general_management_and_controller/power_status_bs/cb_chain_pdu_ped,boolean,Circuit breakers daisy chain in PDU of Pedestal is open
+monitor/acu/general_management_and_controller/power_status_bs/cb_chain_pdu_psc,boolean,Circuit breakers daisy chain in PDU of Pedestal Shielded Compartment is open
+monitor/acu/general_management_and_controller/state,int,see SKA Dish Structure Controller
+monitor/acu/general_management_and_controller/temp_air_inlet_psc,C,Temperature sensor value of air inlet of the Pedestal Shielded Compartment
+monitor/acu/general_management_and_controller/temp_air_outlet_psc,C,Temperature sensor value of air outlet of the Pedestal Shielded Compartment
+monitor/acu/general_management_and_controller/temp_azimuth_i_o_unit,C,Temperature sensor value of Azimuth I/O Unit
+monitor/acu/general_management_and_controller/temp_drive_cab,C,Temperature sensor value of drive cabinet
+monitor/acu/general_management_and_controller/temp_elevation_i_o_unit,C,Temperature sensor value of Elevation I/O Unit
+monitor/acu/general_management_and_controller/temp_emisc,C,Temperature sensor value of EMI Shielded Cabinet
+monitor/acu/general_management_and_controller/temp_feedindexer_i_o_unit,C,Temperature sensor value of FeedIndexer I/O Unit
+monitor/acu/general_management_and_controller/v_act_az,deg/s,Actual azimuth Velocity
+monitor/acu/general_management_and_controller/v_act_el,deg/s,Actual Elevation Velocity
+monitor/acu/general_management_and_controller/voltage_phase_1,V,Line Voltage Phase 1
+monitor/acu/general_management_and_controller/voltage_phase_2,V,Line Voltage Phase 2
+monitor/acu/general_management_and_controller/voltage_phase_3,V,Line Voltage Phase 3
+monitor/acu/general_management_and_controller/warning_status/az_warning,boolean,Azimuth Controller warning
+monitor/acu/general_management_and_controller/warning_status/cmd_warning,boolean,Command Arbiter Controller warning
+monitor/acu/general_management_and_controller/warning_status/dmc_warning,boolean,Dish Management Controller warning
+monitor/acu/general_management_and_controller/warning_status/door_switch_warning_d,boolean,
+monitor/acu/general_management_and_controller/warning_status/door_switch_warning_ped,boolean,Door switch warning pedestal
+monitor/acu/general_management_and_controller/warning_status/door_switch_warning_psc,boolean,Door switch warning Pedestal Shielded Compartment
+monitor/acu/general_management_and_controller/warning_status/door_switch_warning_sc,boolean,
+monitor/acu/general_management_and_controller/warning_status/el_warning,boolean,Elevation Controller warning
+monitor/acu/general_management_and_controller/warning_status/fi_warning,boolean,FeedIndexer Controller warning
+monitor/acu/general_management_and_controller/warning_status/hatch_el_warning,boolean,
+monitor/acu/general_management_and_controller/warning_status/horn_on,boolean,Audible warning horn is on
+monitor/acu/general_management_and_controller/warning_status/humidity_az_cabinet_warning,boolean,Humidity warning Azimuth drive cabinet
+monitor/acu/general_management_and_controller/warning_status/humidity_d_warning,boolean,
+monitor/acu/general_management_and_controller/warning_status/humidity_el_cabinet_warning,boolean,Humidity warning Elevation drive cabinet
+monitor/acu/general_management_and_controller/warning_status/humidity_fi_cabinet_warning,boolean,Humidity warning FeedIndexer drive cabinet
+monitor/acu/general_management_and_controller/warning_status/humidity_inlet_psc_warning,boolean,Humidity warning Pedestal Shielded Compartment air inlet
+monitor/acu/general_management_and_controller/warning_status/humidity_outlet_psc_warning,boolean,Humidity warning Pedestal Shielded Compartment air outlet
+monitor/acu/general_management_and_controller/warning_status/not_used_0,not used,not used
+monitor/acu/general_management_and_controller/warning_status/poi_warning,boolean,Pointing Controller warning
+monitor/acu/general_management_and_controller/warning_status/pwr_warning,boolean,Power Distribution Controller warning
+monitor/acu/general_management_and_controller/warning_status/saf_warning,boolean,Safety System Controller warning
+monitor/acu/general_management_and_controller/warning_status/safe_2_approach_light_on,boolean,The safe to approach light is on
+monitor/acu/general_management_and_controller/warning_status/stp_warning,boolean,Azimuth Stow Pin Controller warning
+monitor/acu/general_management_and_controller/warning_status/temp_az_cabinet_warning,boolean,Temperature warning Azimuth drive cabinet
+monitor/acu/general_management_and_controller/warning_status/temp_d_warning,boolean,
+monitor/acu/general_management_and_controller/warning_status/temp_el_cabinet_warning,boolean,Temperature warning Elevation drive cabinet
+monitor/acu/general_management_and_controller/warning_status/temp_fi_cabinet_warning,boolean,Temperature warning FeedIndexer drive cabinet
+monitor/acu/general_management_and_controller/warning_status/temp_inlet_psc_warning,boolean,Temperature warning Pedestal Shielded Compartment air inlet
+monitor/acu/general_management_and_controller/warning_status/temp_outlet_psc_warning,boolean,Temperature warning Pedestal Shielded Compartment air outlet
+monitor/acu/general_management_and_controller/warning_status/temp_sc_warning,boolean,
+monitor/acu/general_management_and_controller/warning_status/tim_warning,boolean,Time Controller warning
+monitor/acu/general_management_and_controller/warning_status/trx_warning,boolean,Tracking Controller warning
+monitor/acu/general_management_and_controller/working_counter_az,h,Time the Azimuth Axis is in Active State
+monitor/acu/general_management_and_controller/working_counter_el,h,Time the Elevation Axis is in Active State
+monitor/acu/general_management_and_controller/working_counter_fi,h,Time the FeedIndexer Axis is in Active State
+monitor/acu/general_management_and_controller/working_counter_system,h,Time the Dish is running
+monitor/acu/message_counter,,
+monitor/acu/message_length,,
+monitor/acu/pointing/act_amb_temp_1,C,Ambient temperature reading from sensor 1 (south location)
+monitor/acu/pointing/act_amb_temp_2,C,Ambient temperature reading from sensor 2 (east location)
+monitor/acu/pointing/act_amb_temp_3,C,Ambient temperature reading from sensor 3 (west location)
+monitor/acu/pointing/amb_temp_corr_filter_constant,,Sensor filter time constant
+monitor/acu/pointing/amb_temp_corr_val_az,deg,Ambient temperature correction Value for Azimuth axis
+monitor/acu/pointing/amb_temp_corr_val_el,deg,Ambient temperature correction Value for Elevation axis
+monitor/acu/pointing/incl_corr_val_az,arcsec,Tilt meter correction Value for Azimuth axis
+monitor/acu/pointing/incl_corr_val_el,arcsec,Tilt meter correction Value for Elevation axis
+monitor/acu/pointing/incl_filter_constant,,Sensor filter time constant
+monitor/acu/pointing/incl_signal_x_corrected,deg,X value readout of tilt meter including temperature correction and software filtered PT1
+monitor/acu/pointing/incl_signal_x_deg,deg,Raw X value converted to deg
+monitor/acu/pointing/incl_signal_x_filtered,deg,X value readout of tilt meter no temperature correction software filtered PT1
+monitor/acu/pointing/incl_signal_x_raw,V,Raw X value readout of tilt meter
+monitor/acu/pointing/incl_signal_y_corrected,deg,Y value readout of tilt meter including temperature correction and software filtered PT1
+monitor/acu/pointing/incl_signal_y_deg,deg,Raw Y value converted to deg
+monitor/acu/pointing/incl_signal_y_filtered,deg,Y value readout of tilt meter no temperature correction software filtered PT1
+monitor/acu/pointing/incl_signal_y_raw,V,Raw Y value readout of tilt meter
+monitor/acu/pointing/incl_temp,C,Actual temperature read out of tilt meter
+monitor/acu/pointing/p1,arcsec,Actual P1 Azimuth encoder zero offset correction
+monitor/acu/pointing/p2,arcsec,Actual P2 Collimation error of the electromagnetic axis correction
+monitor/acu/pointing/p3,arcsec,Actual P3 Non-orthogonality between the azimuth and elevation axes correction
+monitor/acu/pointing/p4,arcsec,Actual P4 Azimuth axis tilt east west correction
+monitor/acu/pointing/p5,arcsec,Actual P5 Azimuth axis tilt north south correction
+monitor/acu/pointing/p6,arcsec,Actual P6 Declination of Source correction
+monitor/acu/pointing/p7,arcsec,Actual P7 Elevation encoder zero offset correction
+monitor/acu/pointing/p8,arcsec,Actual P8 Gravitational flexure correction
+monitor/acu/pointing/p9,arcsec,Actual P9 Gravitational bending correction
+monitor/acu/pointing/pm_corr_val_az,arcsec,Actual correction value of the static pointing model for azimuth correction
+monitor/acu/pointing/pm_corr_val_el,arcsec,Actual correction value of the static pointing model for elevation correction
+monitor/acu/pointing/point_corr_az,arcsec,Total pointing correction used for azimuth correction
+monitor/acu/pointing/point_corr_el,arcsec,Total pointing correction used for elevation correction
+monitor/acu/pointing/pointing_status/point_amb_temp_corr_enabled,boolean,Ambient Temperature Correction is Enabled
+monitor/acu/pointing/pointing_status/point_incl_corr_enabled,boolean,Inclinometer Correction is Enabled
+monitor/acu/pointing/pointing_status/point_pointing_model_enabled,boolean,Static Pointing Model is Enabled
+monitor/acu/pointing/pointing_status/point_pointing_ok,boolean,Pointing function program is initialized and ready for operation
+monitor/acu/safety_controller/safety_status_bs/abs_init,boolean,The initialization of the safety is done
+monitor/acu/safety_controller/safety_status_bs/door_switch_status_ped,boolean,The Door in Pedestal is open
+monitor/acu/safety_controller/safety_status_bs/e_stop_feed_indexer,boolean,E-Stop on Feed Indexer is pushed
+monitor/acu/safety_controller/safety_status_bs/e_stop_hhd_lockout_box,boolean,E-Stop on HHD or Lockout box is pushed
+monitor/acu/safety_controller/safety_status_bs/em_limit_dn_az,boolean,Emergency Limit Switch lower travel end activated Azimuth
+monitor/acu/safety_controller/safety_status_bs/em_limit_dn_el,boolean,Emergency Limit Switch lower travel end activated Elevation
+monitor/acu/safety_controller/safety_status_bs/em_limit_dn_fi,boolean,Emergency Limit Switch lower travel end activated FeedIndexer
+monitor/acu/safety_controller/safety_status_bs/em_limit_up_az,boolean,Emergency Limit Switch upper travel end activated Azimuth
+monitor/acu/safety_controller/safety_status_bs/em_limit_up_el,boolean,Emergency Limit Switch upper travel end activated Elevation
+monitor/acu/safety_controller/safety_status_bs/em_limit_up_fi,boolean,Emergency Limit Switch upper travel end activated FeedIndexer
+monitor/acu/safety_controller/safety_status_bs/lockout_azimuth,boolean,The lockout for the Azimuth axis is present
+monitor/acu/safety_controller/safety_status_bs/lockout_elevation,boolean,The lockout for the Elevation axis is present
+monitor/acu/safety_controller/safety_status_bs/lockout_feedindexer,boolean,The lockout for the FeedIndexer axis is present
+monitor/acu/safety_controller/safety_status_bs/not_used_0,not used,not used
+monitor/acu/safety_controller/safety_status_bs/not_used_1,not used,not used
+monitor/acu/safety_controller/safety_status_bs/not_used_10,not used,not used
+monitor/acu/safety_controller/safety_status_bs/not_used_2,not used,not used
+monitor/acu/safety_controller/safety_status_bs/not_used_3,not used,not used
+monitor/acu/safety_controller/safety_status_bs/not_used_4,not used,not used
+monitor/acu/safety_controller/safety_status_bs/not_used_5,not used,not used
+monitor/acu/safety_controller/safety_status_bs/not_used_6,not used,not used
+monitor/acu/safety_controller/safety_status_bs/safety_system_error,boolean,The safety system is in error (non-working) condition
+monitor/acu/safety_controller/safety_status_bs/safety_system_run,boolean,The safety system is running and operational
+monitor/acu/safety_controller/safety_status_bs/sto_az,boolean,Safe Torque Off Azimuth
+monitor/acu/safety_controller/safety_status_bs/sto_el,boolean,Safe Torque Off Elevation
+monitor/acu/safety_controller/safety_status_bs/sto_fi,boolean,Safe Torque Off FeedIndexer
+monitor/acu/safety_controller/state,,0 stopped 1 running 9 error
+monitor/acu/stow_pin_controller/azimuth_status,,Azimuth Stow Pin status 1 retracted 2 retracting 3 deployed 4 deploying 9 error
+monitor/acu/stow_pin_controller/elevation_status,,Elevation Stow Pin status 1 retracted 2 retracting 3 deployed 4 deploying 9 error
+monitor/acu/time/act_time_source,,Actual time source 0 internal PC time 1 PTP clock module 2 set by command 3 NTP time from local Windows system
+monitor/acu/time/bit_status/not_used_1,not used,not used
+monitor/acu/time/bit_status/time_init_ok,,
+monitor/acu/time/bit_status/time_ptp_not_sync,boolean,PTP is not synchronized
+monitor/acu/time/external_ptp,MJD,timestamp of the PTP clock
+monitor/acu/time/internal_time,MJD,timestamp of the internal PC clock of absolute set by command
+monitor/acu/time/offset,MJD,offset to the timestamp used
+monitor/acu/tracking/act_po_act_index_a,,
+monitor/acu/tracking/act_po_act_index_b,,
+monitor/acu/tracking/act_po_bs_a/not_used_10,,
+monitor/acu/tracking/act_po_bs_a/not_used_11,,
+monitor/acu/tracking/act_po_bs_a/pts_az_el,,
+monitor/acu/tracking/act_po_bs_a/pts_completed,,
+monitor/acu/tracking/act_po_bs_a/pts_data_valid,,
+monitor/acu/tracking/act_po_bs_a/pts_err,,
+monitor/acu/tracking/act_po_bs_a/pts_init_ok,,
+monitor/acu/tracking/act_po_bs_a/pts_interpol_error,,
+monitor/acu/tracking/act_po_bs_a/pts_newton,,
+monitor/acu/tracking/act_po_bs_a/pts_ra_dec,,
+monitor/acu/tracking/act_po_bs_a/pts_ra_dec_conv_fault,,
+monitor/acu/tracking/act_po_bs_a/pts_ra_dec_short,,
+monitor/acu/tracking/act_po_bs_a/pts_running,,
+monitor/acu/tracking/act_po_bs_a/pts_spline,,
+monitor/acu/tracking/act_po_bs_a/pts_start_pos,,
+monitor/acu/tracking/act_po_bs_a/pts_tim_dist_fault,,
+monitor/acu/tracking/act_po_bs_b/not_used_10,,
+monitor/acu/tracking/act_po_bs_b/not_used_11,,
+monitor/acu/tracking/act_po_bs_b/pts_az_el,,
+monitor/acu/tracking/act_po_bs_b/pts_completed,,
+monitor/acu/tracking/act_po_bs_b/pts_data_valid,,
+monitor/acu/tracking/act_po_bs_b/pts_err,,
+monitor/acu/tracking/act_po_bs_b/pts_init_ok,,
+monitor/acu/tracking/act_po_bs_b/pts_interpol_error,,
+monitor/acu/tracking/act_po_bs_b/pts_newton,,
+monitor/acu/tracking/act_po_bs_b/pts_ra_dec,,
+monitor/acu/tracking/act_po_bs_b/pts_ra_dec_conv_fault,,
+monitor/acu/tracking/act_po_bs_b/pts_ra_dec_short,,
+monitor/acu/tracking/act_po_bs_b/pts_running,,
+monitor/acu/tracking/act_po_bs_b/pts_spline,,
+monitor/acu/tracking/act_po_bs_b/pts_start_pos,,
+monitor/acu/tracking/act_po_bs_b/pts_tim_dist_fault,,
+monitor/acu/tracking/act_po_end_index_a,,
+monitor/acu/tracking/act_po_end_index_b,,
+monitor/acu/tracking/act_po_value_az_a,,
+monitor/acu/tracking/act_po_value_az_b,,
+monitor/acu/tracking/act_po_value_el_a,,
+monitor/acu/tracking/act_po_value_el_b,,
+monitor/acu/tracking/act_poly_value_az,,
+monitor/acu/tracking/act_poly_value_el,,
+monitor/acu/tracking/act_polynomial_bs/not_used_1,,
+monitor/acu/tracking/act_polynomial_bs/pts_completed,,
+monitor/acu/tracking/act_polynomial_bs/pts_err,,
+monitor/acu/tracking/act_polynomial_bs/pts_init_ok,,
+monitor/acu/tracking/act_polynomial_bs/pts_interpol_error,,
+monitor/acu/tracking/act_polynomial_bs/pts_running,,
+monitor/acu/tracking/act_polynomial_bs/pts_tim_dist_fault,,
+monitor/acu/tracking/act_polynomial_bs/pts_track_id_err,,
+monitor/acu/tracking/act_pt_act_index_a,,
+monitor/acu/tracking/act_pt_act_index_b,,
+monitor/acu/tracking/act_pt_bs_a/not_used_10,,
+monitor/acu/tracking/act_pt_bs_a/not_used_11,,
+monitor/acu/tracking/act_pt_bs_a/pts_az_el,,
+monitor/acu/tracking/act_pt_bs_a/pts_completed,,
+monitor/acu/tracking/act_pt_bs_a/pts_data_valid,,
+monitor/acu/tracking/act_pt_bs_a/pts_err,,
+monitor/acu/tracking/act_pt_bs_a/pts_init_ok,,
+monitor/acu/tracking/act_pt_bs_a/pts_interpol_error,,
+monitor/acu/tracking/act_pt_bs_a/pts_newton,,
+monitor/acu/tracking/act_pt_bs_a/pts_ra_dec,,
+monitor/acu/tracking/act_pt_bs_a/pts_ra_dec_conv_fault,,
+monitor/acu/tracking/act_pt_bs_a/pts_ra_dec_short,,
+monitor/acu/tracking/act_pt_bs_a/pts_running,,
+monitor/acu/tracking/act_pt_bs_a/pts_spline,,
+monitor/acu/tracking/act_pt_bs_a/pts_start_pos,,
+monitor/acu/tracking/act_pt_bs_a/pts_tim_dist_fault,,
+monitor/acu/tracking/act_pt_bs_b/not_used_10,,
+monitor/acu/tracking/act_pt_bs_b/not_used_11,,
+monitor/acu/tracking/act_pt_bs_b/pts_az_el,,
+monitor/acu/tracking/act_pt_bs_b/pts_completed,,
+monitor/acu/tracking/act_pt_bs_b/pts_data_valid,,
+monitor/acu/tracking/act_pt_bs_b/pts_err,,
+monitor/acu/tracking/act_pt_bs_b/pts_init_ok,,
+monitor/acu/tracking/act_pt_bs_b/pts_interpol_error,,
+monitor/acu/tracking/act_pt_bs_b/pts_newton,,
+monitor/acu/tracking/act_pt_bs_b/pts_ra_dec,,
+monitor/acu/tracking/act_pt_bs_b/pts_ra_dec_conv_fault,,
+monitor/acu/tracking/act_pt_bs_b/pts_ra_dec_short,,
+monitor/acu/tracking/act_pt_bs_b/pts_running,,
+monitor/acu/tracking/act_pt_bs_b/pts_spline,,
+monitor/acu/tracking/act_pt_bs_b/pts_start_pos,,
+monitor/acu/tracking/act_pt_bs_b/pts_tim_dist_fault,,
+monitor/acu/tracking/act_pt_end_index_a,,
+monitor/acu/tracking/act_pt_end_index_b,,
+monitor/acu/tracking/act_pt_value_az_a,,
+monitor/acu/tracking/act_pt_value_az_b,,
+monitor/acu/tracking/act_pt_value_el_a,,
+monitor/acu/tracking/act_pt_value_el_b,,
+monitor/acu/tracking/act_sector_scan_az,,
+monitor/acu/tracking/act_sector_scan_el,,
+monitor/acu/tracking/act_spiral_scan_az,,
+monitor/acu/tracking/act_spiral_scan_el,,
+monitor/acu/tracking/act_stat_offset_value_az,,
+monitor/acu/tracking/act_stat_offset_value_el,,
+monitor/acu/tracking/act_sun_track_az,,
+monitor/acu/tracking/act_sun_track_el,,
+monitor/acu/tracking/p_desired_az,,
+monitor/acu/tracking/p_desired_el,,
+monitor/acu/tracking/tracking_status/not_used_12,,
+monitor/acu/tracking/tracking_status/not_used_13,,
+monitor/acu/tracking/tracking_status/not_used_14,,
+monitor/acu/tracking/tracking_status/not_used_15,,
+monitor/acu/tracking/tracking_status/not_used_16,,
+monitor/acu/tracking/tracking_status/not_used_17,,
+monitor/acu/tracking/tracking_status/not_used_18,,
+monitor/acu/tracking/tracking_status/not_used_19,,
+monitor/acu/tracking/tracking_status/not_used_2,,
+monitor/acu/tracking/tracking_status/not_used_3,,
+monitor/acu/tracking/tracking_status/tr_init_ok,,
+monitor/acu/tracking/tracking_status/tr_lisajou_error,,
+monitor/acu/tracking/tracking_status/tr_obj_valid,,
+monitor/acu/tracking/tracking_status/tr_offset_table_error_a,,
+monitor/acu/tracking/tracking_status/tr_offset_table_error_b,,
+monitor/acu/tracking/tracking_status/tr_poly_error,,
+monitor/acu/tracking/tracking_status/tr_sector_error,,
+monitor/acu/tracking/tracking_status/tr_sel_offset_table_a,,
+monitor/acu/tracking/tracking_status/tr_sel_offset_table_b,,
+monitor/acu/tracking/tracking_status/tr_sel_offset_zero,,
+monitor/acu/tracking/tracking_status/tr_sel_polynom,,
+monitor/acu/tracking/tracking_status/tr_sel_scan_sector,,
+monitor/acu/tracking/tracking_status/tr_sel_scan_spiral,,
+monitor/acu/tracking/tracking_status/tr_sel_scan_zero,,
+monitor/acu/tracking/tracking_status/tr_sel_sun,,
+monitor/acu/tracking/tracking_status/tr_sel_table_a,,
+monitor/acu/tracking/tracking_status/tr_sel_table_b,,
+monitor/acu/tracking/tracking_status/tr_spiral_error,,
+monitor/acu/tracking/tracking_status/tr_table_error_a,,
+monitor/acu/tracking/tracking_status/tr_table_error_b,,
+monitor/acu/tracking/tracking_status/tr_valid,,
+monitor/acu/weather_station/air_temperature,not used,not used
+monitor/acu/weather_station/average_wind_direction,not used,not used
+monitor/acu/weather_station/average_wind_speed,not used,not used
+monitor/acu/weather_station/hail_accumulation,not used,not used
+monitor/acu/weather_station/hail_duration,not used,not used
+monitor/acu/weather_station/hail_intesity,not used,not used
+monitor/acu/weather_station/hail_peak_intesity,not used,not used
+monitor/acu/weather_station/heating_temperature,not used,not used
+monitor/acu/weather_station/heating_voltage,not used,not used
+monitor/acu/weather_station/humidity,not used,not used
+monitor/acu/weather_station/internal_temperature,not used,not used
+monitor/acu/weather_station/max_wind_direction,not used,not used
+monitor/acu/weather_station/max_wind_speed,not used,not used
+monitor/acu/weather_station/min_wind_direction,not used,not used
+monitor/acu/weather_station/min_wind_speed,not used,not used
+monitor/acu/weather_station/pressure,not used,not used
+monitor/acu/weather_station/rain_accumulation,not used,not used
+monitor/acu/weather_station/rain_duration,not used,not used
+monitor/acu/weather_station/rain_intesity,not used,not used
+monitor/acu/weather_station/rain_peak_intesity,not used,not used
+monitor/acu/weather_station/ref_voltage,not used,not used
+monitor/acu/weather_station/supply_voltage,not used,not used
+monitor/rxs/rxs_signalprocessors_sp01_attenuation,dB,Attenuation of polarization 0
+monitor/rxs/rxs_signalprocessors_sp02_attenuation,dB,Attenuation of polarization 1
+monitor/rxs/rxs_tempvac_temp15k,K,Receiver temperature from sensor at 20K stage
+monitor/rxs/rxs_tempvac_temp70k,K,Receiver temperature from sensor at 70K stage
+monitor/weather/air_pressure,hPa,From katportal sensor 'anc_air_pressure'
+monitor/weather/air_temperature,deg C,From katportal sensor 'anc_air_pressure'
+monitor/weather/humidity,,From katportal sensor 'anc_air_pressure'
+monitor/weather/rain,mm,From katportal sensor 'anc_air_pressure'
+monitor/weather/timestamp,unix,UNIX time stamp of sensor data
+monitor/weather/wind_direction,deg,From katportal sensor 'anc_wind_direction'
+monitor/weather/wind_speed,m/s,From katportal sensor 'anc_wind_speed'
+monitor/weather/wind_speed_gusts,,From katportal sensor 'anc_gust_wind_speed'
