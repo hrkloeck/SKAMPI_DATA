@@ -33,14 +33,14 @@ As examples:
 
 - 1d spectrum
   
-  ![]()<img src="https://github.com/hrkloeck/SKAMPI_DATA/blob/main/work_with_the_dataset/EDD_2022-10-18T11%3A07%3A55.459719UTC_jvpgs_scan_000_P0_ND0_SPEC.png" width=30%>
+  ![]()<img src="https://github.com/hrkloeck/SKAMPI_DATA/blob/main/work_with_the_dataset/EDD_2022-10-18T11%3A07%3A55.459719UTC_jvpgs_scan_000_P0_ND0_SPEC.png" width=50%>
 
 - waterfall spectrum
 
   ![]()<img
-src="https://github.com/hrkloeck/SKAMPI_DATA/blob/main/work_with_the_dataset/EDD_2022-10-18T11%3A07%3A55.459719UTC_jvpgs_scan_000_P0_ND0_WFPLT.png" width=30%>
+src="https://github.com/hrkloeck/SKAMPI_DATA/blob/main/work_with_the_dataset/EDD_2022-10-18T11%3A07%3A55.459719UTC_jvpgs_scan_000_P0_ND0_WFPLT.png" width=50%>
 
 
 - sky coverage
 
-  ![]()<img src="https://github.com/hrkloeck/SKAMPI_DATA/blob/main/work_with_the_dataset/EDD_2022-10-18T11%3A07%3A55.459719UTC_jvpgs_scan_000_P0_ND0_SKYPLT.png"width=30%>
+  ![]()<img src="https://github.com/hrkloeck/SKAMPI_DATA/blob/main/work_with_the_dataset/EDD_2022-10-18T11%3A07%3A55.459719UTC_jvpgs_scan_000_P0_ND0_SKYPLT.png" width=30%>
