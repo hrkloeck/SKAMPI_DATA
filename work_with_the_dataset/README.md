@@ -21,14 +21,13 @@ Options:
   --HELP                Show info on input
 ```
 
+The follownig generates of each polarisation and noise diode combination a file.
 
 ```
 python EXAMPLE_TO_ACCESS_AND_PLOT.py --DATA_FILE=EDD_2022-10-18T11:07:55.459719UTC_jvpgs.hdf5 --DOPLOT_FINAL_SPEC --DOPLOT_FINAL_WATERFALL --DOPLOT_ON_SKY --DOSAVEPLOT
 ```
 
-Generates for each polarisation and noise diode combination a file.
-
-As examples:
+As examples channel 0 and ND off:
 
 - 1d spectrum
   
@@ -43,3 +42,4 @@ src="https://github.com/hrkloeck/SKAMPI_DATA/blob/main/work_with_the_dataset/EDD
 - sky coverage
 
   ![]()<img src="https://github.com/hrkloeck/SKAMPI_DATA/blob/main/work_with_the_dataset/EDD_2022-10-18T11%3A07%3A55.459719UTC_jvpgs_scan_000_P0_ND0_SKYPLT.png" width=30%>
+
