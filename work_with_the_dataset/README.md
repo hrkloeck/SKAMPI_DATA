@@ -37,4 +37,10 @@ As examples:
 
 - waterfall spectrum
 
+  ![]()<img
+src="https://github.com/hrkloeck/SKAMPI_DATA/blob/main/work_with_the_dataset/EDD_2022-10-18T11%3A07%3A55.459719UTC_jvpgs_scan_000_P0_ND0_WFPLT.png" width=30%>
+
+
 - sky coverage
+
+  ![]()<img src="https://github.com/hrkloeck/SKAMPI_DATA/blob/main/work_with_the_dataset/EDD_2022-10-18T11%3A07%3A55.459719UTC_jvpgs_scan_000_P0_ND0_SKYPLT.png"width=30%>
