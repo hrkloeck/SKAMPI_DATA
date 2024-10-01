@@ -32,7 +32,8 @@ Generates for each polarisation and noise diode combination a file.
 As examples:
 
 - 1d spectrum
-  ![]()<img src="https://github.com/hrkloeck/SKAMPI_DATA/blob/main/work_with_the_dataset/EDD_2022-10-18T11%3A07%3A55.459719UTC_jvpgs_scan_000_P0_ND0_SPEC.png" width=25%>
+  
+  ![]()<img src="https://github.com/hrkloeck/SKAMPI_DATA/blob/main/work_with_the_dataset/EDD_2022-10-18T11%3A07%3A55.459719UTC_jvpgs_scan_000_P0_ND0_SPEC.png" width=30%>
 
 - waterfall spectrum
 
