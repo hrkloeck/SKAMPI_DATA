@@ -4,8 +4,7 @@ Here s an example on how to deal and work with the data.
 
 ```
 python EXAMPLE_TO_ACCESS_AND_PLOT.py -h
-```
-<p>
+
 == Example how to access and plot SKAMPI Data == 
 
 Usage: EXAMPLE_TO_ACCESS_AND_PLOT.py [options]
@@ -20,7 +19,7 @@ Options:
   --DOSAVEPLOT          Save the plots as figures
   --DOUSEMASK           Use the default mask to plot the data
   --HELP                Show info on input
-<\p>
+```
 
 
 ```
