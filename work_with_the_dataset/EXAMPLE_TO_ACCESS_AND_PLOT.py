@@ -57,7 +57,7 @@ def main():
     doplot_final_waterfall    = opts.doplot_final_full_data
     doplot_flag_sky_positions = opts.doplot_sky_positions
     pltsave                   = opts.pltsave
-
+    sync_times                = opts.sync_times
 
     # ###################################################
     #
@@ -119,21 +119,20 @@ def main():
     # #########  
     #
 
-
-    # ---------------------------------------------------------------------------------------------
-    # Generate a mask to synchronise the data 
-    # ---------------------------------------------------------------------------------------------
-    #
-    print('\n\n   === Syncronise PFB data in time ===\n')
-    #
-    #
-    # the funktion returns the individual mask for each key to assure 
-    # the same time stamping of the data
-    #
-    time_sync_mask       = return_equal_data(obsfile,timestamp_keys)
-    #
-    # ---------------------------------------------------------------------------------------------
-
+    if sync_times:
+        # ---------------------------------------------------------------------------------------------
+        # Generate a mask to synchronise the data 
+        # ---------------------------------------------------------------------------------------------
+        #
+        print('\n\n   === Syncronise PFB data in time ===\n')
+        #
+        #
+        # the funktion returns the individual mask for each key to assure 
+        # the same time stamping of the data
+        #
+        time_sync_mask       = return_equal_data(obsfile,timestamp_keys)
+        #
+        # ---------------------------------------------------------------------------------------------
 
     # ---------------------------------------------------------------------------------------------
     # Generate a python dic with either the mask of the file or a blank mask
@@ -176,7 +175,6 @@ def main():
     #
     # ---------------------------------------------------------------------------------------------
 
-
     #
     # Combine the masks into a final one
     #
@@ -185,19 +183,22 @@ def main():
     for d in timestamp_keys:
             print('\tsync full 2-d mask in time for : ',d.replace('timestamp',''))
 
-            # combine the sync time mask and the full mask
-            #
-            sync_mask = combine_masks(data_mask[d.replace('/timestamp','')],[np.array(time_sync_mask[d]['mask'])])
 
-            # new set of masks
-            #
-            final_mask[d.replace('timestamp','')]      = sync_mask
-
+            if sync_times:
+                
+                # combine the sync time mask and the full mask
+                #
+                sync_mask = combine_masks(data_mask[d.replace('/timestamp','')],[np.array(time_sync_mask[d]['mask'])])
+                
+                # new set of masks
+                #
+                final_mask[d.replace('timestamp','')]      = sync_mask
+            else:
+                final_mask[d.replace('timestamp','')]      = data_mask[d.replace('/timestamp','')] #sync_mask
     #
     # ---------------------------------------------------------------------------------------------
 
   
-
     # ---------------------------------------------------------------------------------------------
     # Plot the spectrum of the data set
     # ---------------------------------------------------------------------------------------------
@@ -378,6 +379,9 @@ def new_argument_parser():
     parser.add_option('--DOUSEMASK', dest='use_mask', action='store_true',
                       default=False,help='Use the default mask to plot the data')
 
+    parser.add_option('--DOSYNCINTIME', dest='sync_times', action='store_true',
+                      default=False,help='Syncs the individual data (P0,P1,ND0,ND1) in time. Does not work if you have multiple scans.')
+    
     parser.add_option('--HELP', dest='help', action='store_true',
                       default=False,help='Show info on input')
 
